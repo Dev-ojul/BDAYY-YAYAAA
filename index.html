@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ff86a8" />
+    <title>A Little Birthday Gift for Yayaaa ♡</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-decor" aria-hidden="true">
+      <span class="blob blob-one"></span>
+      <span class="blob blob-two"></span>
+      <span class="doodle doodle-one">✿</span>
+      <span class="doodle doodle-two">♡</span>
+      <span class="doodle doodle-three">✦</span>
+    </div>
+
+    <main class="app-shell">
+      <section
+        class="page page-welcome is-active"
+        id="welcome"
+        aria-labelledby="welcome-title"
+      >
+        <div class="tiny-date reveal">
+          A little surprise for my favorite girl
+        </div>
+        <div class="hero-copy reveal reveal-delay-1">
+          <p class="eyebrow">today is all about you</p>
+          <h1 id="welcome-title">
+            <span>Happy</span>
+            <span class="script-title">Birthday</span>
+            <span class="name-line">Yayaaa! <i>♡</i></span>
+          </h1>
+          <p class="hero-note">made with a whole lot of love, just for you</p>
+        </div>
+
+        <button
+          class="envelope-button reveal reveal-delay-2"
+          id="open-envelope"
+          aria-label="Buka amplop ulang tahun"
+        >
+          <span class="envelope-wrap" aria-hidden="true">
+            <span class="mini-letter">for<br /><b>Yayaaa</b></span>
+            <span class="envelope-flap"></span>
+            <span class="envelope-body"></span>
+            <span class="heart-seal">♥</span>
+          </span>
+          <span class="open-label">tap to <b>open</b></span>
+          <svg class="tap-arrow" viewBox="0 0 56 68" aria-hidden="true">
+            <path d="M42 62C49 47 46 27 27 10" />
+            <path d="M27 10l2 16M27 10l15 5" />
+          </svg>
+        </button>
+
+        <span class="corner-flower flower-a" aria-hidden="true">✿</span>
+        <span class="corner-flower flower-b" aria-hidden="true">❀</span>
+        <span class="corner-heart" aria-hidden="true">♥</span>
+      </section>
+
+      <section
+        class="page page-gift"
+        id="gift"
+        aria-labelledby="gift-title"
+        aria-hidden="true"
+      >
+        <button
+          class="back-button"
+          data-back="welcome"
+          aria-label="Kembali ke halaman awal"
+        >
+          ←
+        </button>
+        <div class="gift-card reveal">
+          <div class="postage-stamp" aria-hidden="true">
+            <span>♥</span>
+            <small>HAPPY DAY</small>
+          </div>
+          <p class="eyebrow">a tiny present, wrapped in pixels</p>
+          <h2 id="gift-title">This is for <span>you</span></h2>
+          <div class="gift-illustration" aria-hidden="true">
+            <span class="gift-box"></span>
+            <span class="gift-lid"></span>
+            <span class="gift-ribbon ribbon-v"></span>
+            <span class="gift-ribbon ribbon-h"></span>
+            <span class="gift-bow bow-left"></span>
+            <span class="gift-bow bow-right"></span>
+            <span class="sparkle s-one">✦</span>
+            <span class="sparkle s-two">✧</span>
+            <span class="sparkle s-three">♡</span>
+          </div>
+          <p class="gift-wish">
+            I wish this little gift<br />will make u <strong>happy.</strong>
+          </p>
+          <button class="primary-button" id="open-menu">
+            <span>Click here</span>
+            <span class="button-heart">♡</span>
+          </button>
+          <p class="micro-copy">there are a few little things waiting inside</p>
+        </div>
+      </section>
+
+      <section
+        class="page page-menu"
+        id="menu"
+        aria-labelledby="menu-title"
+        aria-hidden="true"
+      >
+        <button
+          class="back-button"
+          data-back="gift"
+          aria-label="Kembali ke hadiah"
+        >
+          ←
+        </button>
+        <header class="menu-header reveal">
+          <p class="eyebrow">pick anything you like</p>
+          <h2 id="menu-title">Made specially for <span>Yayaaa</span></h2>
+          <p>Three little pieces of my heart—choose one to begin.</p>
+        </header>
+
+        <div class="choice-grid">
+          <button
+            class="choice-card choice-message reveal reveal-delay-1"
+            data-detail="message"
+          >
+            <span class="card-number">01</span>
+            <span class="choice-icon icon-envelope" aria-hidden="true">
+              <span class="icon-letter">♡</span>
+              <span class="icon-envelope-body"></span>
+              <span class="icon-seal">♥</span>
+            </span>
+            <span class="choice-title">Message</span>
+            <span class="choice-subtitle">something from my heart</span>
+            <span class="choice-cta">open letter →</span>
+          </button>
+
+          <button
+            class="choice-card choice-flower reveal reveal-delay-2"
+            data-detail="flower"
+          >
+            <span class="card-number">02</span>
+            <svg class="choice-lily" viewBox="0 0 180 180" aria-hidden="true">
+              <path class="stem" d="M92 160C89 128 94 105 88 75" />
+              <path
+                class="leaf"
+                d="M91 130c-30-20-42 2-43 21 18-1 33-7 43-21Z"
+              />
+              <path
+                class="leaf"
+                d="M91 118c26-23 39-7 43 11-17 2-31-1-43-11Z"
+              />
+              <g class="lily-bloom">
+                <path d="M89 84C60 78 50 50 56 27c20 6 35 22 36 48" />
+                <path d="M90 81C75 55 84 26 103 13c11 18 10 42-8 66" />
+                <path d="M94 81c12-25 37-34 56-25-5 21-23 36-52 31" />
+                <path d="M91 84C67 92 49 80 41 63c17-8 37-2 50 17" />
+                <path d="M96 85c24 8 43-2 52-18-16-10-37-5-52 14" />
+                <path d="M92 86c-7 15-20 20-32 17 3-13 13-21 29-21" />
+                <path d="M95 86c7 15 20 20 32 17-3-13-13-21-29-21" />
+                <circle cx="93" cy="81" r="7" />
+              </g>
+            </svg>
+            <span class="choice-title">Flower</span>
+            <span class="choice-subtitle">a lily that never fades</span>
+            <span class="choice-cta">let it bloom →</span>
+          </button>
+
+          <button
+            class="choice-card choice-memories reveal reveal-delay-3"
+            data-detail="memories"
+          >
+            <span class="card-number">03</span>
+            <span class="retro-camera" aria-hidden="true">
+              <span class="camera-top"></span>
+              <span class="camera-lens"><i></i></span>
+              <span class="camera-flash"></span>
+              <span class="camera-dot"></span>
+            </span>
+            <span class="choice-title">Memories</span>
+            <span class="choice-subtitle">our favorite little moments</span>
+            <span class="choice-cta">look back →</span>
+          </button>
+        </div>
+
+        <p class="menu-footer">p.s. you can come back and open them all ♡</p>
+      </section>
+
+      <section
+        class="page detail-page detail-message"
+        id="message"
+        aria-labelledby="message-title"
+        aria-hidden="true"
+      >
+        <button
+          class="back-button detail-back"
+          data-back="menu"
+          aria-label="Kembali ke pilihan"
+        >
+          ←
+        </button>
+        <div class="detail-heading">
+          <p class="eyebrow">words i hope you keep</p>
+          <h2 id="message-title">A letter for <span>my girl</span></h2>
+        </div>
+        <article class="love-letter reveal">
+          <div class="flower-spray flower-spray-left" aria-hidden="true">
+            <span class="sprig"></span><i>✿</i><b>❀</b><em>✿</em>
+          </div>
+          <div class="flower-spray flower-spray-right" aria-hidden="true">
+            <span class="sprig"></span><i>✿</i><b>❀</b><em>✿</em>
+          </div>
+          <span class="paper-tape tape-one" aria-hidden="true"></span>
+          <span class="paper-tape tape-two" aria-hidden="true"></span>
+          <p class="letter-to">Untuk Yayaaa tersayang,</p>
+          <p>
+            Selamat ulang tahun, cantikku! Terima kasih sudah lahir ke dunia dan
+            tumbuh menjadi kamu— seseorang yang bisa membuat hariku terasa lebih
+            hangat hanya dengan satu senyuman kecil.
+          </p>
+          <p>
+            Aku mungkin ga bisa menjanjikan semua hari bakal selalu sempurna.
+            Tapi aku janji akan selalu berusaha jadi orang yang menggenggam
+            tanganmu di hari yang mudah, dan tetap tinggal di hari yang berat.
+          </p>
+          <p>
+            Di umurmu yang baru (dah kepala dua beliau), semoga hal-hal baik
+            menemukanmu, mimpi-mimpimu pelan-pelan jadi nyata, dan kamu selalu
+            ingat bahwa kamu dicintai—lebih banyak dari yang bisa ditulis oleh
+            kata-kata di surat kecil ini.
+          </p>
+          <p class="letter-highlight">
+            Kalau hari ini kamu tersenyum satu kali saja karena halaman kecil
+            ini, berarti kadoku berhasil. ♡
+          </p>
+          <p class="letter-sign">
+            With all my love,<br /><strong
+              >orang yang selalu memilih kamu</strong
+            >
+          </p>
+          <span class="letter-kiss">♡</span>
+        </article>
+      </section>
+
+      <section
+        class="page detail-page detail-flower"
+        id="flower"
+        aria-labelledby="flower-title"
+        aria-hidden="true"
+      >
+        <button
+          class="back-button detail-back"
+          data-back="menu"
+          aria-label="Kembali ke pilihan"
+        >
+          ←
+        </button>
+        <div class="flower-title-wrap reveal">
+          <p class="eyebrow">a flower that blooms forever</p>
+          <h2 id="flower-title">LILY</h2>
+        </div>
+        <div class="lily-layout">
+          <div class="wish-column wish-left">
+            <article class="wish-note">
+              <span>01</span>
+              <p>May your smile always find a reason to stay.</p>
+            </article>
+            <article class="wish-note">
+              <span>02</span>
+              <p>May every brave little dream of yours come true.</p>
+            </article>
+            <article class="wish-note">
+              <span>03</span>
+              <p>May you always feel loved, safe, and enough.</p>
+            </article>
+          </div>
+
+          <div class="big-lily-wrap reveal reveal-delay-1" aria-hidden="true">
+            <span class="lily-sparkle lily-star-one">✦</span>
+            <span class="lily-sparkle lily-star-two">♡</span>
+            <svg class="big-lily" viewBox="0 0 360 520">
+              <defs>
+                <linearGradient id="petalPink" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#fffdf8" />
+                  <stop offset="0.65" stop-color="#ffd3e1" />
+                  <stop offset="1" stop-color="#ff9fbd" />
+                </linearGradient>
+                <linearGradient id="stemGreen" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#568a57" />
+                  <stop offset="1" stop-color="#99bd70" />
+                </linearGradient>
+              </defs>
+              <path class="big-stem" d="M183 480c-8-110 6-210-3-298" />
+              <path
+                class="big-leaf"
+                d="M181 382c-75-67-119-26-124 25 49 9 91-1 124-25Z"
+              />
+              <path
+                class="big-leaf"
+                d="M183 335c68-65 111-27 118 20-44 10-84 4-118-20Z"
+              />
+              <path
+                class="big-leaf"
+                d="M180 431c-55-47-88-15-89 22 36 5 67-2 89-22Z"
+              />
+              <g class="big-bloom">
+                <path d="M179 203C102 183 80 105 103 39c54 20 88 66 83 147" />
+                <path d="M180 197c-38-68-5-151 54-181 27 56 9 125-40 179" />
+                <path d="M193 202c35-65 108-86 159-48-27 59-84 86-154 63" />
+                <path d="M179 210c-67 29-124 2-149-47 51-30 117-16 151 35" />
+                <path d="M198 211c65 32 125 10 154-36-48-34-116-25-155 25" />
+                <path d="M181 211c-23 44-65 60-101 44 18-43 51-61 98-54" />
+                <path d="M198 213c19 46 60 65 98 53-14-44-47-66-95-62" />
+                <path
+                  class="petal-line"
+                  d="M183 197c-5-52-27-96-68-137M194 201c39-17 88-31 139-32M178 205c-46 1-84-10-126-35"
+                />
+                <circle cx="188" cy="203" r="17" />
+                <path
+                  class="stamen"
+                  d="M187 202l-33-55m37 54 4-67m0 69 43-52"
+                />
+                <circle class="pollen" cx="154" cy="147" r="5" />
+                <circle class="pollen" cx="195" cy="134" r="5" />
+                <circle class="pollen" cx="238" cy="151" r="5" />
+              </g>
+            </svg>
+            <div class="lily-for">FOR <strong>YAYAAA</strong></div>
+          </div>
+
+          <div class="wish-column wish-right">
+            <article class="wish-note">
+              <span>04</span>
+              <p>May life be as gentle with you as your heart is.</p>
+            </article>
+            <article class="wish-note">
+              <span>05</span>
+              <p>May laughter follow you wherever you go.</p>
+            </article>
+            <article class="wish-note">
+              <span>06</span>
+              <p>And may we make a million more memories together.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="page detail-page detail-memories"
+        id="memories"
+        aria-labelledby="memories-title"
+        aria-hidden="true"
+      >
+        <button
+          class="back-button detail-back"
+          data-back="menu"
+          aria-label="Kembali ke pilihan"
+        >
+          ←
+        </button>
+        <header class="memories-heading reveal">
+          <p class="eyebrow">some moments deserve forever</p>
+          <h2 id="memories-title">Our little <span>memories</span></h2>
+          <p>Empat momen kecil yang selalu ingin aku simpan.</p>
+        </header>
+
+        <div class="memories-layout">
+          <div class="photo-collage" aria-label="Empat tempat foto kenangan">
+            <button
+              class="polaroid photo-one has-photo"
+              data-photo="1"
+              aria-label="Ganti foto pertama"
+            >
+              <span class="photo-placeholder"
+                ><i>+</i><small>add our photo</small></span
+              >
+              <img src="assets/memories/memory-1.png" data-fallback="assets/memories/memory-1.png" alt="Yayaaa dan kekasihnya berfoto bersama" />
+              <b>our favorite day ♡</b>
+            </button>
+            <button
+              class="polaroid photo-two has-photo"
+              data-photo="2"
+              aria-label="Ganti foto kedua"
+            >
+              <span class="photo-placeholder"
+                ><i>+</i><small>add our photo</small></span
+              >
+              <img src="assets/memories/memory-2.png" data-fallback="assets/memories/memory-2.png" alt="Kenangan malam Yayaaa bersama kekasihnya" />
+              <b>you &amp; me</b>
+            </button>
+            <button
+              class="polaroid photo-three has-photo"
+              data-photo="3"
+              aria-label="Ganti foto ketiga"
+            >
+              <span class="photo-placeholder"
+                ><i>+</i><small>add our photo</small></span
+              >
+              <img src="assets/memories/memory-3.png" data-fallback="assets/memories/memory-3.png" alt="Foto lucu Yayaaa dan kekasihnya" />
+              <b>sweet little moments</b>
+            </button>
+            <button
+              class="polaroid photo-four has-photo"
+              data-photo="4"
+              aria-label="Ganti foto keempat"
+            >
+              <span class="photo-placeholder"
+                ><i>+</i><small>add our photo</small></span
+              >
+              <img src="assets/memories/memory-4.png" data-fallback="assets/memories/memory-4.png" alt="Close-up lucu Yayaaa" />
+              <b>more to come...</b>
+            </button>
+          </div>
+
+          <div class="memory-letter-area reveal reveal-delay-2">
+            <p class="memory-prompt">one more thing for you...</p>
+            <button
+              class="memory-envelope"
+              id="memory-envelope"
+              aria-expanded="false"
+              aria-label="Buka pesan kenangan"
+            >
+              <span class="memory-note">
+                <span class="memory-note-title">Dear Yayaaa,</span>
+                <span class="memory-note-copy">
+                  Foto-foto ini cuma potongan kecil dari semua bahagia yang kamu
+                  bawa. Semoga nanti ada ratusan bingkai lagi yang bisa kita isi
+                  bersama—dengan tempat baru, cerita receh, dan senyum kamu yang
+                  selalu jadi favoritku.
+                </span>
+                <span class="memory-note-sign"
+                  >To more memories with you ♡</span
+                >
+              </span>
+              <span class="memory-envelope-flap"></span>
+              <span class="memory-envelope-body"></span>
+              <span class="memory-envelope-seal">♥</span>
+            </button>
+            <p class="tap-memory">tap the envelope to read</p>
+          </div>
+        </div>
+        <input type="file" id="photo-input" accept="image/*" hidden />
+      </section>
+    </main>
+
+    <div class="transition-layer" aria-hidden="true"><span>♡</span></div>
+    <div class="confetti-layer" id="confetti" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
